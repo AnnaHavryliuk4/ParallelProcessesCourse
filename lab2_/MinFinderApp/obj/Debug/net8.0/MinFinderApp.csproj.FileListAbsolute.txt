@@ -1,0 +1,15 @@
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\bin\Debug\net8.0\MinFinderApp.exe
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\bin\Debug\net8.0\MinFinderApp.deps.json
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\bin\Debug\net8.0\MinFinderApp.runtimeconfig.json
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\bin\Debug\net8.0\MinFinderApp.dll
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\bin\Debug\net8.0\MinFinderApp.pdb
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.AssemblyInfoInputs.cache
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.AssemblyInfo.cs
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.csproj.CoreCompileInputs.cache
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.sourcelink.json
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.dll
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\refint\MinFinderApp.dll
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.pdb
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\MinFinderApp.genruntimeconfig.cache
+D:\Univer\ParallelProcessesCourse\lab2_\MinFinderApp\obj\Debug\net8.0\ref\MinFinderApp.dll
