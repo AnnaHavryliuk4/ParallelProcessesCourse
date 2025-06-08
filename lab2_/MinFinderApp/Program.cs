@@ -5,14 +5,15 @@ class MinFinder
 {
     private int[] arr;
     private int start, end;
-    private int threadId;
     private static int globalMin = int.MaxValue;
     private static int globalMinIndex = -1;
-    private static object lockObj = new object();
+    private static readonly object minLock = new object();
+    private static readonly object syncLock = new object();
+    private static int completedThreads = 0;
+    private static int totalThreads;
 
-    public MinFinder(int threadId, int[] arr, int start, int end)
+    public MinFinder(int[] arr, int start, int end)
     {
-        this.threadId = threadId;
         this.arr = arr;
         this.start = start;
         this.end = end;
@@ -32,7 +33,7 @@ class MinFinder
             }
         }
 
-        lock (lockObj)
+        lock (minLock)
         {
             if (localMin < globalMin)
             {
@@ -40,10 +41,35 @@ class MinFinder
                 globalMinIndex = localMinIndex;
             }
         }
+
+        lock (syncLock)
+        {
+            completedThreads++;
+            if (completedThreads == totalThreads)
+            {
+                Monitor.Pulse(syncLock);
+            }
+        }
     }
 
     public static int GetGlobalMin() => globalMin;
     public static int GetGlobalMinIndex() => globalMinIndex;
+
+    public static void WaitForCompletion()
+    {
+        lock (syncLock)
+        {
+            while (completedThreads < totalThreads)
+            {
+                Monitor.Wait(syncLock);
+            }
+        }
+    }
+
+    public static void SetTotalThreads(int count)
+    {
+        totalThreads = count;
+    }
 }
 
 class Program
@@ -61,7 +87,8 @@ class Program
         int negIndex = rnd.Next(arraySize);
         array[negIndex] = -rnd.Next(1000);
 
-        MinFinder[] finders = new MinFinder[numThreads];
+        MinFinder.SetTotalThreads(numThreads);
+
         Thread[] threads = new Thread[numThreads];
         int chunkSize = arraySize / numThreads;
 
@@ -69,13 +96,12 @@ class Program
         {
             int start = i * chunkSize;
             int end = (i == numThreads - 1) ? arraySize - 1 : (start + chunkSize - 1);
-            finders[i] = new MinFinder(i + 1, array, start, end);
-            threads[i] = new Thread(finders[i].FindMin);
+            MinFinder finder = new MinFinder(array, start, end);
+            threads[i] = new Thread(finder.FindMin);
             threads[i].Start();
         }
 
-        for (int i = 0; i < numThreads; i++)
-            threads[i].Join();
+        MinFinder.WaitForCompletion();
 
         Console.WriteLine("Global minimum: " + MinFinder.GetGlobalMin());
         Console.WriteLine("Index of minimum: " + MinFinder.GetGlobalMinIndex());

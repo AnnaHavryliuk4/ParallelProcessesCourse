@@ -1,0 +1,15 @@
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\bin\Debug\net8.0\DiningPhilosophersApp.exe
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\bin\Debug\net8.0\DiningPhilosophersApp.deps.json
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\bin\Debug\net8.0\DiningPhilosophersApp.runtimeconfig.json
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\bin\Debug\net8.0\DiningPhilosophersApp.dll
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\bin\Debug\net8.0\DiningPhilosophersApp.pdb
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.AssemblyInfoInputs.cache
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.AssemblyInfo.cs
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.csproj.CoreCompileInputs.cache
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.sourcelink.json
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.dll
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\refint\DiningPhilosophersApp.dll
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.pdb
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\DiningPhilosophersApp.genruntimeconfig.cache
+D:\Univer\ParallelProcessesCourse\lab4_\DiningPhilosophersApp\obj\Debug\net8.0\ref\DiningPhilosophersApp.dll
