@@ -5,11 +5,12 @@ class MinFinder extends Thread {
     private int start, end;
     private static int globalMin = Integer.MAX_VALUE;
     private static int globalMinIndex = -1;
-    private static final Object lock = new Object();
-    private int threadId;
+    private static final Object minLock = new Object();
+    private static final Object syncLock = new Object();
+    private static int completedThreads = 0;
+    private static int totalThreads;
 
-    public MinFinder(int threadId, int[] arr, int start, int end) {
-        this.threadId = threadId;
+    public MinFinder(int[] arr, int start, int end) {
         this.arr = arr;
         this.start = start;
         this.end = end;
@@ -19,6 +20,7 @@ class MinFinder extends Thread {
     public void run() {
         int localMin = Integer.MAX_VALUE;
         int localMinIndex = -1;
+
         for (int i = start; i <= end; i++) {
             if (arr[i] < localMin) {
                 localMin = arr[i];
@@ -26,10 +28,17 @@ class MinFinder extends Thread {
             }
         }
 
-        synchronized (lock) {
+        synchronized (minLock) {
             if (localMin < globalMin) {
                 globalMin = localMin;
                 globalMinIndex = localMinIndex;
+            }
+        }
+
+        synchronized (syncLock) {
+            completedThreads++;
+            if (completedThreads == totalThreads) {
+                syncLock.notify(); 
             }
         }
     }
@@ -44,7 +53,7 @@ class MinFinder extends Thread {
 
     public static void main(String[] args) throws InterruptedException {
         int arraySize = 10000;
-        int numThreads = 4;
+        totalThreads = 4;
         int[] array = new int[arraySize];
         Random rnd = new Random();
 
@@ -55,22 +64,24 @@ class MinFinder extends Thread {
         int negIndex = rnd.nextInt(arraySize);
         array[negIndex] = -rnd.nextInt(1000);
 
-        MinFinder[] threads = new MinFinder[numThreads];
-        int chunkSize = arraySize / numThreads;
+        MinFinder[] threads = new MinFinder[totalThreads];
+        int chunkSize = arraySize / totalThreads;
 
-        for (int i = 0; i < numThreads; i++) {
+        for (int i = 0; i < totalThreads; i++) {
             int start = i * chunkSize;
-            int end = (i == numThreads - 1) ? arraySize - 1 : (start + chunkSize - 1);
-            threads[i] = new MinFinder(i + 1, array, start, end);
+            int end = (i == totalThreads - 1) ? arraySize - 1 : (start + chunkSize - 1);
+            threads[i] = new MinFinder(array, start, end);
             threads[i].start();
         }
 
-        for (MinFinder thread : threads) {
-            thread.join();
+        synchronized (syncLock) {
+            while (completedThreads < totalThreads) {
+                syncLock.wait(); 
+            }
         }
 
-        System.out.println("Global minimum: " + MinFinder.getGlobalMin());
-        System.out.println("Index of minimum: " + MinFinder.getGlobalMinIndex());
+        System.out.println("Global minimum: " + getGlobalMin());
+        System.out.println("Index of minimum: " + getGlobalMinIndex());
         System.out.println("Negative element index: " + negIndex);
     }
 }

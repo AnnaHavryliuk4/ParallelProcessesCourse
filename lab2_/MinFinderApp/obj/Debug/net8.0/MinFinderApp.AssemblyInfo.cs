@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MinFinderApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92737217ca3e5eb7258e497aba9335f613398f7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+740c66986ce2b1242f4c2d93ebed1ca7e1f5b78c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MinFinderApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MinFinderApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
