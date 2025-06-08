@@ -1,0 +1,15 @@
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\bin\Debug\net8.0\ProducerConsumerApp.exe
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\bin\Debug\net8.0\ProducerConsumerApp.deps.json
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\bin\Debug\net8.0\ProducerConsumerApp.runtimeconfig.json
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\bin\Debug\net8.0\ProducerConsumerApp.dll
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\bin\Debug\net8.0\ProducerConsumerApp.pdb
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.AssemblyInfoInputs.cache
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.AssemblyInfo.cs
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.csproj.CoreCompileInputs.cache
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.sourcelink.json
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.dll
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\refint\ProducerConsumerApp.dll
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.pdb
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ProducerConsumerApp.genruntimeconfig.cache
+D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\obj\Debug\net8.0\ref\ProducerConsumerApp.dll
