@@ -12,3 +12,4 @@ D:\Univer\ParallelProcessesCourse\lab1_\ThreadDemoApp\obj\Debug\net8.0\refint\Th
 D:\Univer\ParallelProcessesCourse\lab1_\ThreadDemoApp\obj\Debug\net8.0\ThreadDemoApp.pdb
 D:\Univer\ParallelProcessesCourse\lab1_\ThreadDemoApp\obj\Debug\net8.0\ThreadDemoApp.genruntimeconfig.cache
 D:\Univer\ParallelProcessesCourse\lab1_\ThreadDemoApp\obj\Debug\net8.0\ref\ThreadDemoApp.dll
+D:\Univer\ParallelProcessesCourse\lab1_\ThreadDemoApp\obj\Debug\net8.0\ThreadDemoApp.sourcelink.json
