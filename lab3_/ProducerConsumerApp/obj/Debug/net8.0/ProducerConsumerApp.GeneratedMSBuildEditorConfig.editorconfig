@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProducerConsumerApp
-build_property.ProjectDir = D:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\
+build_property.ProjectDir = d:\Univer\ParallelProcessesCourse\lab3_\ProducerConsumerApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

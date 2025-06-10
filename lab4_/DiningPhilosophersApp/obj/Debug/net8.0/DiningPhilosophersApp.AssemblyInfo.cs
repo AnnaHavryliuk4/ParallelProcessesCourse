@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiningPhilosophersApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5e1e19cbb26356795ed268cf85a07683d33ec68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d41bbc802b4e5d9bca3ce3243183b0fc691e591c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiningPhilosophersApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiningPhilosophersApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
