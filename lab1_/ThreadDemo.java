@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class SumThread extends Thread {
     private int step;
-    private boolean running = true;
+    private volatile boolean running = true;
     private int id;
     private long sum = 0;
     private int count = 0;
@@ -61,17 +61,15 @@ public class ThreadDemo {
             threads[i].start();
         }
 
-        Thread.sleep(2000);
-
-        System.out.println("Надсилаємо сигнал на зупинку потоків...");
+   
         for (int i = 0; i < numThreads; i++) {
+            long workTime = (i + 1) * 1000; 
+            Thread.sleep(workTime);
+            System.out.println("Надсилаємо сигнал на зупинку потоку #" + (i + 1) + " після " + workTime + " мс роботи");
             threads[i].stopThread();
-        }
-
-        System.out.println("Чекаємо завершення потоків...");
-        for (int i = 0; i < numThreads; i++) {
             threads[i].join();
         }
+
         System.out.println("Всі потоки завершили роботу.");
     }
 }

@@ -47,19 +47,15 @@ class ThreadDemo {
             threads[i].Start();
         }
 
-        Thread.Sleep(2000);
-
-        Console.WriteLine("Надсилаємо сигнал на зупинку потоків...");
         for (int i = 0; i < numThreads; i++) {
+            int workTime = (i + 1) * 1000; 
+            Thread.Sleep(workTime);
+            Console.WriteLine($"Надсилаємо сигнал на зупинку потоку #{i + 1} після {workTime} мс роботи");
             workers[i].Stop();
-        }
-
-        Console.WriteLine("Чекаємо завершення потоків...");
-        for (int i = 0; i < numThreads; i++) {
             threads[i].Join();
         }
-        Console.WriteLine("Всі потоки завершили роботу.");
 
+        Console.WriteLine("Всі потоки завершили роботу.");
         Console.ReadKey();
     }
 }

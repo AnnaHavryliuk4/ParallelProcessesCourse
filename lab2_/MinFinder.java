@@ -3,10 +3,14 @@ import java.util.Random;
 class MinFinder extends Thread {
     private int[] arr;
     private int start, end;
+    // статичні змінні для збереження глобального мінімуму та його індексу.
     private static int globalMin = Integer.MAX_VALUE;
     private static int globalMinIndex = -1;
+    //об’єкт для блокування при оновленні глобального мінімуму
     private static final Object minLock = new Object();
+    // об’єкт для сигналізації про завершення всіх потоків.
     private static final Object syncLock = new Object();
+    //кількість потоків, що завершили роботу.
     private static int completedThreads = 0;
     private static int totalThreads;
 
